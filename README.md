@@ -1,60 +1,52 @@
-# Ryzentosh for AMD Ryzen 9 7900X + TUF X670E-PLUS Wifi
+# Ryzentosh Sonoma on AMD Ryzen 9 7900 MSI X670E Tomahawk Wifi
 
 ## Specification
 |  Component  | Model                               |
 | ------------ |-------------------------------------|
 | CPU  | AMD Ryzen 9 7900                   |
 | Motherboard | MSI X670E Tomahawk Wifi          |
-| RAM  | 32GB (2x16GB) Kinston Fury DDR5     |
+| RAM  | 32GB (2x16GB) Kinston Fury 6000 DDR5     |
 |  GPU  | XFX Radeon RX480 |
 | Ethernet  | Realtek RTL8125                     |
 | Bluetooth  | ASUS BT-500                     |
 
 ## ACPI
-- SSDT-CPUR
-- SSDT-IGPU-DISABLE.aml
-- SSDT-DTPG.aml
-- DSDT-X670E-TUF-WIFI-patched.aml
-- SSDT-EC-USBX.aml
-- SSDT-SBUS-MCHC-AMD.aml
-- SSDT-UIAC.aml
-- SSDT-GPRW.aml
+- SSDT-CPUR.aml
+- SSDT-EC-USBX-DESKTOP.aml
+- SSDT-I225V.aml
+- SSDT-PLUG_RYZEN.aml
 
 
 ## Kext
-- Lilu
-- VirtualSMC
-- LucyRTL8125Ethernet
-- WhateverGreen
-- AppleMCEReporterDisabler
-- AMDRyzenCPUPowerManagement
-- AppleALC
-- RestrictEvents
-- USBToolBox
-- UTBMap
-- RadeonSensor
-- SMCRadeonGPU
-- SMCAMDProcessor
-- SMCRadeonGPU
-- USBPorts
-- NVMeFix
-- Innie
-- AirportItlwm_Sonoma144
-- AirportItlwm_Sonoma140
-- AirportItlwm-Ventura
-- AirportItlwm-Monterey
-- IntelBluetoothFirmware
-- IntelBTPatcher
-- BlueToolFixup
+- AirportItlwm.kext
+- AMDRyzenCPUPowerManagement.kext
+- AppleALC.kext
+- AppleIGC.kext
+- AppleIntelI210Ethernet.kext
+- AppleMCEReporterDisabler.kext
+- BlueToolFixup.kext
+- IntelBluetoothFirmware.kext
+- IntelBTPatcher.kext
+- Lilu.kext
+- NVMeFix.kext
+- RadeonSensor.kext
+- RestrictEvents.kext
+- SMCAMDProcessor.kext
+- SMCRadeonGPU.kext
+- USBMap.kext
+- USBToolBox.kext
+- VirtualSMC.kext
+- WhateverGreen.kext
+- LucyRTL8125Ethernet.kext
+
 
 ## Not Tested
-- USB4/Thunderbot
+- USB3 not all
 
 ## Not Working
-- M2 Wifi 6: MT7921K is not supported
-- iService not working on Sonoma 14.4 with Wifi
+- Wifi 6: MT7922 is not supported
 
-### MacOS version : Sonoma (up to 14.4.1), Ventura
-### SMBIOS : MacPro7.1
-### Motherboard Bios version : 1813
+### MacOS version : Sonoma (up to 14.4.1)
+### SMBIOS : iMac20,2
+### Motherboard Bios version : 1F0
 
