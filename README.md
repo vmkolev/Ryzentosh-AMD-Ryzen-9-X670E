@@ -1,11 +1,16 @@
-# Ryzentosh Sonoma on AMD Ryzen 9 7900 + MSI X670E Tomahawk Wifi
+# Ryzentosh Sonoma on AMD Ryzen 9 7900 + MSI X670E Tomahawk WiFi
+
+### MacOS version : Sonoma 14.7.2
+### SMBIOS : iMac20,2
+### Motherboard Bios version : 7E12v1F
+
 
 ## Specification
 |  Component  | Model                               |
 | ------------ |-------------------------------------|
 | CPU  | AMD Ryzen 9 7900                   |
 | Motherboard | MSI X670E Tomahawk Wifi          |
-| RAM  | Kingston FURY Beast Black DIMM Kit 32GB (2x16GB) DDR5 6000MHz     |
+| RAM  | Kingston FURY Beast Kit 32GB (2x16GB) DDR5 6000MHz     |
 |  GPU  | XFX Radeon RX480 |
 | Ethernet  | Realtek RTL8125                     |
 | Bluetooth  | ASUS BT-500                     |
@@ -39,14 +44,15 @@
 - WhateverGreen.kext
 - LucyRTL8125Ethernet.kext
 
+## BIOS settings
+After reset BIOS to "default optimized" I've changed the following settings:
+- iGPU - Disabled  
+- IOMMU - Auto
+- 4G - Enabled
+- Legacy USB - Enabled 
 
 ## Not Tested
-- USB3 not all
+- USB ports - I have not test all ports
 
 ## Not Working
-- Wifi 6: MT7922 is not supported
-
-### MacOS version : Sonoma 14.7.2
-### SMBIOS : iMac20,2
-### Motherboard Bios version : 7E12v1F
-
+- WiFi 6: MT7922 is not supported
