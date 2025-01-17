@@ -93,7 +93,9 @@ If your choice is OCAT, when you start it it will check and add all files in OC,
 If you follow the instructions of other used tools all information about SMBIOS and USB ports should be already saved in config.plist file.
 
 Grab a beer and go to next step - edit **Kernel**
-Check how many cores have your CPU and apply the patch *(from Dortania Guide)* then modify the number of cores in all four lines in `kernel> patch`. You just need to add the number in `HEX` format `BX <phys core count> 0000 0000`.
+Check how many cores have your CPU and apply the patch *(from Dortania Guide)* then modify the number of cores in all four lines in `kernel> patch`. You just need to add the number in `HEX` format:
+`BX <phys core count> 0000 0000`.
+
 Check SMBIOS settings and edit ROM value in **PlatformInfo**. Compare your file with my configuration file - which options are true or false /checked or unchecked/ and do the proper action. Also, consult with your notes from Dortania Guide.
 
 When you are ready - reboot your computer, cross your finger, took a sip of beer, and boot from your USB drive.
