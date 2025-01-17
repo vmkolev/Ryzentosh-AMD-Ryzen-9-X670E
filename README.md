@@ -64,4 +64,4 @@ After reset BIOS to "default optimized" I've changed the following settings:
 - GenSMBIOS - [link-genSMBIOS](https://github.com/corpnewt/GenSMBIOS)
 - USBToolBox - [link-USBToolBox](https://github.com/USBToolBox/tool)
 - [AMD-OSX forum](https://forum.amd-osx.com/)
-- [macOS86](https://macos86.it/)
+- [macOS86 forum](https://macos86.it/)
