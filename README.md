@@ -1,7 +1,9 @@
 # Ryzentosh on AMD Ryzen 9 7900 + MSI X670E Tomahawk WiFi
 
 > MacOS version : Sonoma 14.7.2
+>
 > SMBIOS : iMac20,2
+>
 > Motherboard Bios version : 7E12v1F
 
 
