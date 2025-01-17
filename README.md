@@ -1,8 +1,8 @@
 # Ryzentosh Sonoma on AMD Ryzen 9 7900 + MSI X670E Tomahawk WiFi
 
-### MacOS version : Sonoma 14.7.2
-### SMBIOS : iMac20,2
-### Motherboard Bios version : 7E12v1F
+#### MacOS version : Sonoma 14.7.2
+#### SMBIOS : iMac20,2
+#### Motherboard Bios version : 7E12v1F
 
 
 ## Specification
@@ -56,3 +56,12 @@ After reset BIOS to "default optimized" I've changed the following settings:
 
 ## Not Working
 - WiFi 6: MT7922 is not supported
+
+## Invaluable tools & links:
+- Dortania Guide - [link-guide](https://dortania.github.io/OpenCore-Install-Guide/)
+- OCAuxiliaryTools - [link-OCAT](https://github.com/ic005k/OCAuxiliaryTools)
+- ProperTree - [link-ProperTree](https://github.com/corpnewt/ProperTree)
+- GenSMBIOS - [link-genSMBIOS](https://github.com/corpnewt/GenSMBIOS)
+- USBToolBox - [link-USBToolBox](https://github.com/USBToolBox/tool)
+- [AMD-OSX forum](https://forum.amd-osx.com/)
+- [macOS86](https://macos86.it/)
