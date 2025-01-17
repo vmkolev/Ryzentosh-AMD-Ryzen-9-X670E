@@ -1,11 +1,11 @@
-# Ryzentosh Sonoma on AMD Ryzen 9 7900 MSI X670E Tomahawk Wifi
+# Ryzentosh Sonoma on AMD Ryzen 9 7900 + MSI X670E Tomahawk Wifi
 
 ## Specification
 |  Component  | Model                               |
 | ------------ |-------------------------------------|
 | CPU  | AMD Ryzen 9 7900                   |
 | Motherboard | MSI X670E Tomahawk Wifi          |
-| RAM  | 32GB (2x16GB) Kinston Fury 6000 DDR5     |
+| RAM  | Kingston FURY Beast Black DIMM Kit 32GB (2x16GB) DDR5 6000MHz     |
 |  GPU  | XFX Radeon RX480 |
 | Ethernet  | Realtek RTL8125                     |
 | Bluetooth  | ASUS BT-500                     |
@@ -46,7 +46,7 @@
 ## Not Working
 - Wifi 6: MT7922 is not supported
 
-### MacOS version : Sonoma (up to 14.4.1)
+### MacOS version : Sonoma 14.7.2
 ### SMBIOS : iMac20,2
-### Motherboard Bios version : 1F0
+### Motherboard Bios version : 7E12v1F
 
