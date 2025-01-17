@@ -1,13 +1,11 @@
 # Ryzentosh on AMD Ryzen 9 7900 + MSI X670E Tomahawk WiFi
 
 > MacOS version : Sonoma 14.7.2
->
 > SMBIOS : iMac20,2
->
 > Motherboard Bios version : 7E12v1F
 
 
-## Specification
+### Specification
 |  Component  | Model                               |
 | ------------ |-------------------------------------|
 | CPU  | AMD Ryzen 9 7900                   |
@@ -17,14 +15,14 @@
 | Ethernet  | Realtek RTL8125                     |
 | Bluetooth  | ASUS BT-500                     |
 
-## ACPI
+### ACPI
 - SSDT-CPUR.aml
 - SSDT-EC-USBX-DESKTOP.aml
 - SSDT-I225V.aml
 - SSDT-PLUG_RYZEN.aml
 
 
-## Kext
+### Kext
 - AirportItlwm.kext
 - AMDRyzenCPUPowerManagement.kext
 - AppleALC.kext
@@ -46,17 +44,17 @@
 - WhateverGreen.kext
 - LucyRTL8125Ethernet.kext
 
-## BIOS settings
+### BIOS settings
 After reset BIOS to "default optimized" I've changed the following settings:
 - iGPU - Disabled  
 - IOMMU - Auto
 - 4G - Enabled
 - Legacy USB - Enabled 
 
-## Not Tested
+### Not Tested
 - USB ports - I have not test all ports
 
-## Not Working
+### Not Working
 - WiFi 6: MT7922 is not supported
 
 ## Installation
@@ -95,6 +93,7 @@ If you follow the instructions of other used tools all information about SMBIOS 
 Grab a beer and go to next step - edit **Kernel**
 Check how many cores have your CPU and apply the patch *(from Dortania Guide)* then modify the number of cores in all four lines in `kernel> patch`. You just need to add the number in `HEX` format `BX <phys core count> 0000 0000`.
 Check SMBIOS settings and edit ROM value in **PlatformInfo**. Compare your file with my configuration file - which options are true or false /checked or unchecked/ and do the proper action. Also, consult with your notes from Dortania Guide.
+
 When you are ready - reboot your computer, cross your finger, took a sip of beer, and boot from your USB drive.
 If you find any troubles, you have to google for solutions - check the forums, links are below. If everything goes well you should see the macOS recovery window. Proceed with disk formatting, grab a beer, and then start installation of the Mac OS. The last part takes three beers.
 
