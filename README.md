@@ -95,10 +95,10 @@ If you follow the instructions of other used tools all information about SMBIOS 
 Grab a beer and go to next step - edit **Kernel**
 Check how many cores have your CPU and apply the patch *(from Dortania Guide)* then modify the number of cores in all four lines in `kernel> patch`. You just need to add the number in `HEX` format:
 
-*`B8000000 0000 => B8 <core count> 0000 0000` 
-*`BA000000 0000 => BA <core count> 0000 0000` 
-*`BA000000 0090 => BA <core count> 0000 0090` 
-*`BA000000 00 => BA <core count> 0000 00` 
+- `B8000000 0000 => B8 <core count> 0000 0000` 
+- `BA000000 0000 => BA <core count> 0000 0000` 
+- `BA000000 0090 => BA <core count> 0000 0090` 
+- `BA000000 00 => BA <core count> 0000 00` 
 
 Check SMBIOS settings and edit ROM value in **PlatformInfo**. Compare your file with my configuration file - which options are true or false /checked or unchecked/ and do the proper action. Also, consult with your notes from Dortania Guide.
 
