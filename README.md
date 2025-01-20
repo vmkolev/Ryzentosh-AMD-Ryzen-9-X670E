@@ -107,6 +107,32 @@ If you find any troubles, you have to google for solutions - check the forums, l
 
 **Cheers!**
 
+## Add virtualization support - VirtualBox
+
+**Notes**
+Thank you for people that discover it, I copied it from [here](https://macos86.it/topic/6535-guidevirtualbox-on-sonoma-and-amd-hackintosh/)
+
+The key program is Virtualbox 6.1.50 and related USB 3 extensions, where the code to support AMD-V/SVM are still present. **VirtualBox 7** is not ok because it only works with VT-X/VT-D owned only by Intel CPUs now, nobody created a wrapper yet.
+
+1. In config.plist (see image) inside your boot EFI, Add the numbers csr-active-config = 03080000 (see image)  into the NVRAM section of config.plist (to workaround security & Privacy Oracle Box kext sign problems with this partial SIP disable).
+2.  Add AMFIPass.kext details (see image) into kernel section of config.plist.  Save config.plist back to the EFI /OC folder.
+3. Download version 1.40 of AMFIPass.kext and copy it over onto your EFI drive's Kext folder.
+4. Ensure you can reset NVRAM in Opencore when rebooting
+5. Reboot, and hit space, number to reset your NVRAM.
+6. Now it should boot with your SIP disabled and use AMFIpass to allow the box kernel thru.
+7. Download & install Vbox v.6.1.48 or 6.1.50
+8. During the installation process it should ask you to sign / allow the Oracle Virtual Box / ALLOW it inside your 'System Settings' Security & privacy section.
+9. After install and the kernel of box has been signed it will ask to reboot. Go ahead and reboot.
+10. After reboot, locate and download/install Oracle_VM_VirtualBox_Extension_Pack-6.1.50.vbox-extpack (if using ver 6.1.50)
+11. Now grab a ISO from Microsoft and install your guest OS - in my case it was Windows 10 32 bit iso
+12. Go thru the motions of installing the guest OS like you normally would.
+13. Locate and download VBoxGuestAdditions_6.1.50.iso or VBoxGuestAdditions_6.1.48.iso and install them from a guest ISO storage drive.This will provide a number of addition hardware features and functionality.
+14. Finally, fine tune your guest OS for display USB pointing devices etc...
+15. If you get problems running virtual box - quit Vbox completely (stop any guest VMs running first if you can) and then rerun it by running it from within Applications folder and not as an alias as sometimes aliases get corrupted or lose sight of the software.
+16. I tried then resetting SIP to Enabled and disabling AMFIPass kext inside config plist Kernel section, reboot, resetting NVRAM and booting up to Sonoma but the Kernel errors reappeared and I found they were no longer 'Allowed' by the OS. Subsequently, virtual box guest VM's failed to start. 😞
+17. So went back to partially Disabling SIP (csr-active-config = 03080000) but didn't require AMFIPass to ON now that Ive installed vBox. 
+
+
 ## Invaluable tools & links:
 - Dortania Guide - [link-guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - OCAuxiliaryTools - [link-OCAT](https://github.com/ic005k/OCAuxiliaryTools)
