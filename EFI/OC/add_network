@@ -1,0 +1,18 @@
+        <key>DeviceProperties</key>
+        <dict>
+            <key>Add</key>
+            <dict/>
+                <key>PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0x4,0x0)/Pci(0x0,0x0)</key>
+                <dict>
+                   <key>model</key>
+                   <string>RTL8125 2.5Gbe Controller</string>
+                   <key>device-id</key>
+                   <data>hCUQ7A==</data>
+                </dict>
+            </dict>
+            <key>Delete</key>
+            <dict/>
+        </dict>
+
+
+        842504ED
